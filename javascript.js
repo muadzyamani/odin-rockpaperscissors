@@ -43,7 +43,6 @@ class Game {
     getPlayerSelection() {
         buttons.forEach((button) => {
             button.addEventListener('click', () => {
-                console.log(`player: ${button.innerHTML.toLowerCase()}`);
                 this.playerSelection = button.innerHTML.toLowerCase();
                 this.start();
             });
@@ -59,7 +58,6 @@ class Game {
         } else {
             this.computerSelection = 'scissors';
         }
-        console.log(`computer: ${this.computerSelection}`);
     }
 
     showRoundNumber() {
